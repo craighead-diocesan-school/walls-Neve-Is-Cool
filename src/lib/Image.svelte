@@ -1,30 +1,37 @@
-<img src="{src}" alt={alt} class="image" />
+<script>
+  export let src = ""
+  export let alt = ""
+  export let description = ""
+  export let price = ""
+</script>
+
+<img {src} {alt} class="image" />
 
 <div>
-    <p>{description}</p>
-    <p>{price}</p>
+  <p class="name">{description}</p>
+  <p class="cost">{price}</p>
 </div>
-
 
 <style>
   img {
-    width:10%;
+    width: 10%;
   }
 
   div {
-    width:10%;
-    background-color:#E4E0DD;
-    height:60px;
+    width: 10%;
+    background-color: #e4e0dd;
+    height: 60px;
   }
 
   p {
-    font-family:"Gelasio", serif;
+    font-family: "Gelasio", serif;
   }
 
-  description {
-    color:#1D1E18;
+  .name {
+    color: #1d1e18;
   }
 
-  price {
-    color:#4059AD;
+  .cost {
+    color: #4059ad;
   }
+</style>

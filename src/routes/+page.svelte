@@ -1,13 +1,12 @@
 <script>
   import Header from "$lib/Header.svelte"
+  import Image from "$lib/Image.svelte"
 </script>
 
 <Header />
 <section></section>
 <main>
-  <h2>SvelteKit</h2>
-
-  <p>Welcome to coding with SvelteKit, a modern JavaScript framework that makes it easy to code great apps.</p>
+  <Image src="https://digitech.craighead.school.nz/wall-shop-images/white-brick.jpg&quot;" alt="Brick wall painted white" description="Brick wall painted white" price="$14.90" />
 </main>
 
 <section></section>
