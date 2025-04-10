@@ -15,6 +15,7 @@
 <style>
   img {
     width: 10%;
+    height: 10%;
   }
 
   div {
