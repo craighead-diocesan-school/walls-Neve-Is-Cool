@@ -14,14 +14,20 @@
 
 <style>
   img {
-    width: 10%;
-    height: 10%;
+    width: 15%;
+    height: 20%;
+    margin-left: 18%;
+    margin-top: 2%;
   }
 
   div {
-    width: 10%;
+    width: 15%;
     background-color: #e4e0dd;
-    height: 60px;
+    height: 7%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 18%;
   }
 
   p {
