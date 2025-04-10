@@ -1,6 +1,6 @@
 <script>
   import Header from "$lib/Header.svelte"
-  import Image from "$lib/Image.svelte"
+  import Image from "$lib/Wall.svelte"
 </script>
 
 <Header />
@@ -29,17 +29,43 @@
 <section></section>
 
 <footer>
-  <p>&copy; Craighead Diocesan School 2024</p>
+  <p>&copy; NeveGaffaney2025</p>
 </footer>
 
 <style>
   main {
     background-color: #afd5be;
-    height: 1000px;
+    height: 1500px;
+  }
+
+  .first-row {
+    display: flex;
+    justify-content: center;
+  }
+  .second-row {
+    display: flex;
+    justify-content: center;
+  }
+  .third-row {
+    display: flex;
+    justify-content: center;
+  }
+  .last-row {
+    display: flex;
+    justify-content: center;
   }
 
   section {
     background-color: #4059ad;
     height: 30px;
+  }
+
+  footer {
+    background-color: #cfe3f2;
+    color: #4059ad;
+    text-align: center;
+    height: 50px;
+    font-family: "Gelasio", serif;
+    padding-top: 15px;
   }
 </style>

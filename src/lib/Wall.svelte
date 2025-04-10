@@ -5,29 +5,28 @@
   export let price = ""
 </script>
 
-<img {src} {alt} class="image" />
-
-<div>
-  <p class="name">{description}</p>
-  <p class="cost">{price}</p>
+<div class="wall">
+  <img {src} {alt} class="image" />
+  <div>
+    <p class="name">{description}</p>
+    <p class="cost">{price}</p>
+  </div>
 </div>
 
 <style>
-  img {
-    width: 15%;
-    height: 20%;
-    margin-left: 18%;
-    margin-top: 2%;
+  .wall {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   div {
-    width: 15%;
+    width: 100%;
     background-color: #e4e0dd;
-    height: 7%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-left: 18%;
   }
 
   p {
