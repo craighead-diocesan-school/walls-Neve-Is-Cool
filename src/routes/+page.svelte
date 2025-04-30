@@ -1,32 +1,72 @@
 <script>
   import Header from "$lib/Header.svelte"
-  import Image from "$lib/Wall.svelte"
+  import Wall from "$lib/Wall.svelte"
+
+  const walls = [
+    {
+      name: "Brick wall painted white",
+      img: "https://digitech.craighead.school.nz/wall-shop-images/white-brick.jpg",
+      price: 14.9,
+    },
+    {
+      name: "Brick wall painted pink",
+      img: "https://digitech.craighead.school.nz/wall-shop-images/pink-brick.jpg",
+      price: 19.9,
+    },
+    {
+      name: "Unpainted brick wall",
+      img: "https://digitech.craighead.school.nz/wall-shop-images/unpainted-brick.jpg",
+      price: 9.9,
+    },
+    {
+      name: "Plaster wall painted orange",
+      img: "https://digitech.craighead.school.nz/wall-shop-images/orange-plaster.jpg",
+      price: 11.9,
+    },
+    {
+      name: "Run-down wall painted yellow",
+      img: "https://digitech.craighead.school.nz/wall-shop-images/yellow-run-down.jpg",
+      price: 4.9,
+    },
+    {
+      name: "Run-down wall painted grey",
+      img: "https://digitech.craighead.school.nz/wall-shop-images/grey-run-down.jpg",
+      price: 4.9,
+    },
+    {
+      name: "Run-down wall painted tan",
+      img: "https://digitech.craighead.school.nz/wall-shop-images/tan-run-down.jpg",
+      price: 4.9,
+    },
+    {
+      name: "Really rough wall",
+      img: "https://digitech.craighead.school.nz/wall-shop-images/rough.jpg",
+      price: 4.9,
+    },
+    {
+      name: "Wall with flowers",
+      img: "https://digitech.craighead.school.nz/wall-shop-images/flowers.jpg",
+      price: 24.9,
+    },
+    {
+      name: "Art-deco wall",
+      img: "https://digitech.craighead.school.nz/wall-shop-images/art-deco.jpg",
+      price: 34.9,
+    },
+  ]
 </script>
 
 <Header />
-<section></section>
+<div></div>
 <main>
-  <div class="first-row">
-    <Image src="placeholder-image.png" alt="Brick wall painted white" description="Brick wall painted white" price="$14.90" />
-    <Image src="placeholder-image.png" alt="Brick wall painted pink" description="Brick wall painted pink" price="$19.90" />
-    <Image src="placeholder-image.png" alt="Unpainted brick wall" description="Unpainted brick wall" price="$9.90" />
-  </div>
-  <div class="second-row">
-    <Image src="placeholder-image.png" alt="Plaster wall painted orange" description="Plaster wall painted orange" price="$11.90" />
-    <Image src="placeholder-image.png" alt="Run-down wall painted yellow" description="Run-down wall painted yellow" price="$4.90" />
-    <Image src="placeholder-image.png" alt="Run-down wall painted grey" description="Run-down wall painted grey" price="$4.90" />
-  </div>
-  <div class="third-row">
-    <Image src="placeholder-image.png" alt="Run-down wall painted tan" description="Run-down wall painted tan" price="$4.90" />
-    <Image src="placeholder-image.png" alt="Really rough wall" description="Really rough wall" price="$4.90" />
-    <Image src="placeholder-image.png" alt="Wall with flowers" description="Wall with flowers" price="$24.90" />
-  </div>
-  <div class="last-row">
-    <Image src="placeholder-image.png" alt="Art-deco wall" description="Art-deco wall" price="$34.90" />
-  </div>
+  <section>
+    {#each walls as wall}
+      <Wall src={wall.img} alt={wall.name} description={wall.name} price={wall.price} />
+    {/each}
+  </section>
 </main>
 
-<section></section>
+<div></div>
 
 <footer>
   <p>&copy; NeveGaffaney2025</p>
@@ -38,24 +78,13 @@
     height: 1500px;
   }
 
-  .first-row {
+  section {
     display: flex;
-    justify-content: center;
-  }
-  .second-row {
-    display: flex;
-    justify-content: center;
-  }
-  .third-row {
-    display: flex;
-    justify-content: center;
-  }
-  .last-row {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
-  section {
+  div {
     background-color: #4059ad;
     height: 30px;
   }

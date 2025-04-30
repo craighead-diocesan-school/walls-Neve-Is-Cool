@@ -9,7 +9,7 @@
   <img {src} {alt} class="image" />
   <div>
     <p class="name">{description}</p>
-    <p class="cost">{price}</p>
+    <p class="cost">${price}</p>
   </div>
 </div>
 
