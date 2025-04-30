@@ -40,4 +40,13 @@
   .cost {
     color: #4059ad;
   }
+
+  @media screen and (max-width: 1000px) {
+    .wall {
+      width: 80%;
+      margin-top: 5%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
 </style>

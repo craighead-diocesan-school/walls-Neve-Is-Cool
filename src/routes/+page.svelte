@@ -97,4 +97,19 @@
     font-family: "Gelasio", serif;
     padding-top: 15px;
   }
+
+  @media screen and (max-width: 1000px) {
+    main {
+      height: 3870px;
+    }
+
+    section {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    div {
+      height: 20px;
+    }
+  }
 </style>

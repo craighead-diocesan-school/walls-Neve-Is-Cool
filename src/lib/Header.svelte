@@ -22,4 +22,14 @@
     font-size: 200%;
     padding-left: 2%;
   }
+
+  @media screen and (max-width: 1000px) {
+    h1 {
+      font-size: 500%;
+    }
+
+    h2 {
+      font-size: 150%;
+    }
+  }
 </style>
