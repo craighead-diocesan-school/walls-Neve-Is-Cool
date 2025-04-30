@@ -75,7 +75,7 @@
 <style>
   main {
     background-color: #afd5be;
-    height: 1500px;
+    height: 100%;
   }
 
   section {
@@ -98,11 +98,7 @@
     padding-top: 15px;
   }
 
-  @media screen and (max-width: 1000px) {
-    main {
-      height: 3870px;
-    }
-
+  @media screen and (max-width: 800px) {
     section {
       flex-direction: column;
       align-items: center;

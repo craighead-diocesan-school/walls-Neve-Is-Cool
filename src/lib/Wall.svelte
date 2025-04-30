@@ -18,9 +18,10 @@
     display: flex;
     flex-direction: column;
     width: 20%;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 3%;
   }
 
   div {
@@ -41,10 +42,9 @@
     color: #4059ad;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 800px) {
     .wall {
       width: 80%;
-      margin-top: 5%;
       margin-left: 10%;
       margin-right: 10%;
     }
